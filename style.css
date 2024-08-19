@@ -1,0 +1,90 @@
+/* Universal selector for global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.again {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 32px;
+    background-color: white;
+    /* max-width: fit-content; */
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.number {
+    text-align: center;
+    font-size: 3rem;
+    background-color: white;
+    color: #222;
+    /* max-width: fit-content; */
+    width: 10rem;
+    padding: 25px 50px 25px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.guess {
+    font-size: 5rem;
+    /* background-color: #222; */
+    background: none;
+    border: none;
+    border: 4px solid white;
+    color: white;
+    text-align: center;
+    width: 12rem;
+    padding: 1rem;
+    margin-bottom: 25px;
+}
+
+.check {
+    font-size: 32px;
+    background-color: white;
+    /* max-width: fit-content; */
+    padding: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2 {
+    font-size: 40px;
+    width: 18rem;
+}
+
+.text {
+    margin-bottom: 3rem;
+}
