@@ -67,7 +67,7 @@ body {
     text-align: center;
     width: 12rem;
     padding: 1rem;
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
 }
 
 .check {
@@ -81,10 +81,55 @@ body {
 }
 
 .box2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     width: 18rem;
 }
 
 .text {
     margin-bottom: 3rem;
+}
+
+@media (max-width: 600px) {
+
+    .again {
+        top: 1rem;
+        left: 1rem;
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        margin-bottom: 1rem;
+    }
+
+    .number {
+        margin-bottom: 1rem;
+    }
+
+    .main {
+        display: inline;
+        justify-content: space-around;
+    }
+
+    .guess {
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .check {
+        font-size: 1rem;
+    }
+
+    .box2 {
+        font-size: 2rem;
+        max-width: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
