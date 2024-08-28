@@ -10,6 +10,7 @@ document.querySelector(".check").addEventListener("click", function() {
     if (!guess) {
         document.querySelector(".text").textContent = "No guess...";
     }
+    
     else if (guess === secretNumber) {
         if (score > highScore) {
             highScore = score;
@@ -20,16 +21,13 @@ document.querySelector(".check").addEventListener("click", function() {
         document.querySelector(".number").style.width = "15rem";
         document.querySelector("body").style.backgroundColor = "#60b347";
     }
-    else if (guess > secretNumber) {
-        document.querySelector(".text").textContent = "Too High!";
-        score--;
-        document.querySelector(".score").textContent = score;
-    }
     
-    else if (guess < secretNumber) {
-        document.querySelector(".text").textContent = "Too Low!";
-        score--;
-        document.querySelector(".score").textContent = score;
+    else if (guess !== secretNumber) {
+        if (score > 1) {
+            document.querySelector(".text").textContent = guess > secretNumber ? "Too High!" : "Too Low!";
+            score--;
+            document.querySelector(".score").textContent = score;
+        }
     }
 
 });
